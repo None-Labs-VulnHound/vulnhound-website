@@ -1,0 +1,85 @@
+{
+  "title": "NoneLabs VulnHound - Security Intelligence Feed",
+  "generated_at": "2026-10-31T06:33:52Z",
+  "item_count": 6,
+  "items": [
+    {
+      "id": "CVE-2021-44228",
+      "type": "EXPLOIT WEAPONIZED",
+      "title": "Apache Log4j2 JNDI RCE (Log4Shell)",
+      "summary": "Apache Log4j2 JNDI features do not protect against attacker controlled LDAP and other JNDI related endpoints, permitting arbitrary code execution.",
+      "severity": "CRITICAL",
+      "cvss_score": 10.0,
+      "has_exploit": true,
+      "exploit_count": 2,
+      "tags": ["CWE-502", "CWE-400", "PoC-Available"],
+      "published_at": "2026-10-31T06:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
+    },
+    {
+      "id": "CVE-2022-22965",
+      "type": "EXPLOIT WEAPONIZED",
+      "title": "Spring Framework RCE via Data Binding (Spring4Shell)",
+      "summary": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution via data binding parameter tampering.",
+      "severity": "CRITICAL",
+      "cvss_score": 9.8,
+      "has_exploit": true,
+      "exploit_count": 1,
+      "tags": ["CWE-94", "PoC-Available"],
+      "published_at": "2026-10-31T06:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22965"
+    },
+    {
+      "id": "CWE-89",
+      "type": "CWE",
+      "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+      "summary": "The software constructs all or part of an SQL command using externally-influenced input without neutralization, enabling database tampering.",
+      "severity": "CRITICAL",
+      "cvss_score": 9.8,
+      "has_exploit": false,
+      "exploit_count": 0,
+      "tags": ["CWE-89", "OWASP-Top-10"],
+      "published_at": "2026-10-31T06:00:00Z",
+      "url": "https://cwe.mitre.org/data/definitions/89.html"
+    },
+    {
+      "id": "CVE-2024-6387",
+      "type": "EXPLOIT WEAPONIZED",
+      "title": "OpenSSH Server Signal Handler Race Condition (regreSSHion)",
+      "summary": "A signal handler race condition in OpenSSH server (sshd) allows unauthenticated remote code execution as root in glibc-based Linux environments.",
+      "severity": "HIGH",
+      "cvss_score": 8.1,
+      "has_exploit": true,
+      "exploit_count": 1,
+      "tags": ["CWE-362", "PoC-Available"],
+      "published_at": "2026-10-31T06:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6387"
+    },
+    {
+      "id": "CVE-2021-4034",
+      "type": "EXPLOIT WEAPONIZED",
+      "title": "Polkit pkexec Local Privilege Escalation (PwnKit)",
+      "summary": "A local privilege escalation vulnerability was found in the polkit pkexec utility allowing unprivileged users to obtain root access.",
+      "severity": "HIGH",
+      "cvss_score": 7.8,
+      "has_exploit": true,
+      "exploit_count": 1,
+      "tags": ["CWE-787", "PoC-Available"],
+      "published_at": "2026-10-31T06:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-4034"
+    },
+    {
+      "id": "CWE-78",
+      "type": "CWE",
+      "title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+      "summary": "The software constructs an OS command using externally-influenced input without proper neutralization, executing arbitrary shell commands.",
+      "severity": "CRITICAL",
+      "cvss_score": 9.8,
+      "has_exploit": false,
+      "exploit_count": 0,
+      "tags": ["CWE-78", "Injection"],
+      "published_at": "2026-10-31T06:00:00Z",
+      "url": "https://cwe.mitre.org/data/definitions/78.html"
+    }
+  ]
+}

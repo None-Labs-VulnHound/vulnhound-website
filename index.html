@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoneLabs VulnHound | Real-Time Security Intelligence & Exploit Feed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://raw.githubusercontent.com/None-Labs-VulnHound/.github/main/profile/logo.png">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <img src="https://raw.githubusercontent.com/None-Labs-VulnHound/.github/main/profile/logo.png" alt="VulnHound Logo" class="brand-logo">
+        <span class="brand-name">NoneLabs <strong>VulnHound</strong></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#feed">Threat Feed</a>
+        <a href="#about">Architecture</a>
+        <a href="https://github.com/None-Labs-VulnHound/vulnhound-community" target="_blank" class="btn btn-secondary">Community Edition (Free)</a>
+        <a href="https://github.com/None-Labs-VulnHound" target="_blank" class="btn btn-primary">Commercial Pentest</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">LIVE SECURITY THREAT FEED</div>
+        <h1>Continuous Vulnerability & Weaponized Exploit Intelligence</h1>
+        <p>Real-time stream of high-impact CVEs, MITRE CWE weaknesses, and active weaponized exploit tools powered by Gemma 4 multilingual AI analysis.</p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" id="total-alerts">...</span><span class="stat-label">Active Alerts</span></div>
+          <div class="stat"><span class="stat-num" id="critical-count">...</span><span class="stat-label">Critical Severity</span></div>
+          <div class="stat"><span class="stat-num" id="exploit-count">...</span><span class="stat-label">PoC Verified</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feed" class="feed-section">
+      <div class="section-header">
+        <h2>🚨 Latest Threat & Exploit Disclosures</h2>
+        <div class="feed-controls">
+          <input type="text" id="search-input" placeholder="Search CVE, CWE, or keyword...">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="exploit">PoC Available</button>
+          <button class="filter-btn" data-filter="critical">Critical (9.0+)</button>
+        </div>
+      </div>
+
+      <div class="feed-grid" id="feed-container">
+        <!-- Rendered by app.js -->
+        <div class="loading">Fetching threat feed...</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2026 NoneLabs VulnHound. Project Manager & Implementation Owner: <code>limmireu1214@gmail.com</code></p>
+      <p class="subtext">Autonomous Security Intelligence powered by Golang, Google Cloud, and GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
